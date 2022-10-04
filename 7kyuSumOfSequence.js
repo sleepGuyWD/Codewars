@@ -15,4 +15,4 @@ const sequenceSum = (begin, end, step) => {
   }
   let finalArray = array.reduce((acc, c) => acc + c, 0)
   return finalArray
-}
+}                     
