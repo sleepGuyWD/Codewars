@@ -10,14 +10,9 @@ function countPositivesSumNegatives(input) {
   } else {
     let positiveCount = 0
     let negSum = 0
-    input.forEach ((x) => {
-      if (x > 0) {
-        positiveCount += 1
-      } else {
-        negSum += x
-      }
-    })
+    input.forEach ((x) => x > 0 ? positiveCount += 1 : negSum += x)
    let array = [positiveCount, negSum]               
    return array
   }
 }
+
