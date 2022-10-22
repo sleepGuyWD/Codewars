@@ -16,3 +16,4 @@ function bmi(weight, height) {
          bmi <= 30.0 ? "Overweight" :
          "Obese"
 }
+
