@@ -17,4 +17,4 @@ I have attempted to refactor each challenge while working through them.  Althoug
 
 ## Lessons Learned:
 
-I started learning Javascript towards the end of Sept. 2022.  I have learned that in order to solve coding challenges, you MUST manage your frustrations.  Some problems will be much easier than others, but you must push through in order to reach that solution.  There are some challenges where you will need to review the solutions after an attempt.  It is okay to do this, because you can learn from others' solutions.   It is important to note these failures, because they ultimately lead to future success.
+I started learning Javascript towards the end of Sept. 2022.  I have learned that in order to solve coding challenges, you MUST manage your frustrations.  Some problems will be much easier than others, but you must push through in order to reach that solution.  There are some challenges where you will need to review the solutions after a failed attempt.  It is okay to do this, because you can learn from others' solutions.   It is important to note these failures, because they ultimately lead to future success.
