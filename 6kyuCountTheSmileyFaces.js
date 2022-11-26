@@ -10,6 +10,7 @@ No additional characters are allowed except for those mentioned.
 
 Valid smiley face examples: :) :D ;-D :~)
 Invalid smiley faces: ;( :> :} :]*/
+
 function countSmileys(arr) {
   let count = 0
   let valid = [':)',';)',':-)',':~)',';-)',';~)',':D',';D',':-D',':~D',';-D',';~D']
