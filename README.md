@@ -9,7 +9,7 @@ Welcome to my Codewars repository where I display my discipline to solving code 
 
 **Tech used:** JavaScript
 
-Everyday, depending on my current schedule, I attempt to solve at least ONE Codewars Challenge in Javascript.  Juggling a full-time job, while learning to program is not an easy task, but completing these challenges really help me dive into a study session.  Many solutions are applicable to real world solutions at times, and I think it is awesome that Codewars provides a medium for you to test your knowledge.
+Everyday, depending on my current schedule, I attempt to solve at least ONE Codewars Challenge in Javascript.  Juggling a full-time job, while learning to program is not an easy task, but completing these challenges really helps get the ball rolling into a study session.  Many solutions are applicable to real world solutions at times, and I think it is awesome that Codewars provides a medium for you to test your knowledge.
 
 ## Optimizations
 
