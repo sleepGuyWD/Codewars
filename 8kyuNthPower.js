@@ -12,6 +12,6 @@ function index(array, n){
     return -1
   } else {
   let element = array[n]
-  return element ** n//your code here
+  return element ** n
   }
 }
