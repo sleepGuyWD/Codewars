@@ -7,11 +7,7 @@ function bump(x){
   let counter = 0
   let splitted = x.split('')
   splitted.forEach((el) => {
-    if (el == '_') {
-      counter += 0
-    } else {
-      counter += 1
-    }
+    el == '_' ? counter += 0 : counter += 1
   })
   return counter <= 15 ? 'Woohoo!' : 'Car Dead'
 }
