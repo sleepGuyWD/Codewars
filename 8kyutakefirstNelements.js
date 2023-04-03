@@ -4,7 +4,9 @@ Create a function that accepts a list/array and a number n, and returns a list/a
 function take(arr, n) {
   let defList = []
   for (i = 0; i < n; i++) {
-    defList.push(arr[i])
+    if (arr[i] != undefined) {
+      defList.push(arr[i])
+    }
   }
   return defList
 }
