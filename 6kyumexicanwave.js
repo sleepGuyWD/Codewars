@@ -21,6 +21,5 @@ function wave(str){
           answer.push(wordSplit.join(''))
       }
   }
-  
   return answer
 }
