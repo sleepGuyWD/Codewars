@@ -21,3 +21,5 @@ function adjacentElementsProduct(array) {
   
   return sort[sort.length-1]
 }
+
+//can also use Math.max to get highest element in array.
