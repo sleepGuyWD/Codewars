@@ -16,19 +16,24 @@ Examples(num, nth --> output)
 */
 
 var findDigit = function(num, nth){
+  //return -1 for neg or 0
   if (nth <= 0) {
     return -1
   }
 
-  let switched = Math.abs(num).toString().split('')
+  //get abs value of number, convert to string, then split into array
+  let splitted = Math.abs(num).toString().split('')
   
-  if(switched.length < nth) {
-     for (i = switched.length; i <= nth; i++ ) {
-      switched.unshift('0')   
+  //if array is smaller in length than 'nth' parameter, run a For Loop to add a '0' to the beginning of the array using unshift method.
+  if(splitted.length < nth) {
+     for (i = splitted.length; i <= nth; i++ ) {
+      splitted.unshift('0')   
     }
   }
   
-  let joined = switched.reverse().join('')
+  //reverse the splitted array, then join each element into a single string, then store into joined variable
+  let joined = splitted.reverse().join('')
 
+  //return the nth-1 position in the string due to zero-based indexing, then convert value to number then return 
   return Number(joined[nth-1])
 }
