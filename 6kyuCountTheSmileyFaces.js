@@ -14,7 +14,7 @@ Invalid smiley faces: ;( :> :} :]*/
 function countSmileys(arr) {
   let count = 0
   let valid = [':)',';)',':-)',':~)',';-)',';~)',':D',';D',':-D',':~D',';-D',';~D']
-  arr.forEach(el => {
+  arr.forEach( el => {
     for (i = 0; i <= valid.length; i++){
       el == valid[i] ? count += 1 : count += 0
     }
