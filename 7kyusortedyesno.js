@@ -7,13 +7,11 @@ Complete the method which accepts an array of integers, and returns one of the f
 You can assume the array will always be valid, and there will always be one correct answer.
 */
 
-
-
 function isSortedAndHow(array) {
 
   const aSort = [...array].sort((a, b) => a - b)
   const dSort = [...array].sort((a, b) => b - a)
 
-  //In the conditional, we use the join() method into order to compare string value for simplicity
+  //In the conditional, we use the join() method into order to compare string value for simplicity.  Really thought this was out of the box. Didn't think about this. 
   return array.join() === aSort.join() ? 'yes, ascending' : array.join() === dSort.join() ? 'yes, descending' :'no'
 }
