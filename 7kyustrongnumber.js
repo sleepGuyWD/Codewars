@@ -7,7 +7,7 @@ Task
 Given a positive number, find if it is strong or not, and return either "STRONG!!!!" or "Not Strong !!".
 */
 function strong(n) {
-  //if (n.length > 1) {
+  if (n.length > 1) {
     
     let sum = 123
     
@@ -26,15 +26,18 @@ function strong(n) {
       
       let factorial = array.map((el, i) => {
         let arr = []
-        for (i = 0; i < array[i])
+        for (i = 0; i < array[i]; i++) {
+
+        }
         
       })
       
       
       
     }
-  } /*else {
+  } else {
     let factorial2 = n * 1
     return factorial2 == n ? 'STRONG!!!!' : 'Not Strong !!'
-  }*/
+  }
+    
 }
