@@ -15,12 +15,23 @@ function printerError(s) {
   let colors = 'abcdefghijklm'
   let message = `${errors}/${total}`
   
-  for (i = 0; i <= s.length; i++) {
-    for (j = 0; j <= colors.length; j++) {
-      s[i] == colors[j] ? errors += 0 : errors += 1
+  for (i = 0; i < s.length; i++) {
+    for (j = 0; j < colors.length; j++) {
+      console.log(s[i], colors[j], colors.indexOf(colors[j]))
       
+      if (s[i] == colors[j]) {
+        let good = 0
+        good += 1
+        
+        if (good == 1) {
+          errors += 0
+        } else {
+          errors += 1
+        }
+      } 
     }
   }    
  
-  return message
+  console.log(message)
+  //return message
 }
