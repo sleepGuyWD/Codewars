@@ -11,27 +11,32 @@ The string has a length greater or equal to one and contains only letters from a
 
 function printerError(s) {
   let total = s.length
-  let errors = 0
   let colors = 'abcdefghijklm'
-  let message = `${errors}/${total}`
+  let errors = 0
   
+  //Loop through whole, main string
   for (i = 0; i < s.length; i++) {
+    
+    let good = 0
+    
+    //loop through good color codes in comparison to the current string
     for (j = 0; j < colors.length; j++) {
-      console.log(s[i], colors[j], colors.indexOf(colors[j]))
-      
-      if (s[i] == colors[j]) {
-        let good = 0
+
+      if (s[i] == colors[j]) {  
         good += 1
-        
-        if (good == 1) {
-          errors += 0
-        } else {
-          errors += 1
-        }
-      } 
-    }
-  }    
- 
-  console.log(message)
-  //return message
+      }  
+      
+      //console.log(`s letter: ${s[i]}.`, `goodCode: ${colors[j]}.`, `index: ${colors.indexOf(colors[j])}.`)
+    } 
+    
+    //console.log(`Matches ${good}`)
+    
+    if (good == 0) {
+      errors += 1    
+    }   
+  }
+  
+  //console.log(`Errors ${errors}`)
+  let message = `${errors}/${total}`
+  return message
 }
