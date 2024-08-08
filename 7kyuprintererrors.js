@@ -37,6 +37,7 @@ function printerError(s) {
   }
   
   //console.log(`Errors ${errors}`)
+  
   let message = `${errors}/${total}`
   return message
 }
