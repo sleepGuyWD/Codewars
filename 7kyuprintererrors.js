@@ -10,34 +10,16 @@ You have to write a function printer_error which given a string will return the 
 The string has a length greater or equal to one and contains only letters from ato z.*/
 
 function printerError(s) {
-  let total = s.length
-  let colors = 'abcdefghijklm'
   let errors = 0
+  let total = s.length
   
-  //Loop through whole, main string
-  for (i = 0; i < s.length; i++) {
-    
-    let good = 0
-    
-    //loop through good color codes in comparison to the current string
-    for (j = 0; j < colors.length; j++) {
+  let splitArr = s.split('')
 
-      if (s[i] == colors[j]) {  
-        good += 1
-      }  
-      
-      //console.log(`s letter: ${s[i]}.`, `goodCode: ${colors[j]}.`, `index: ${colors.indexOf(colors[j])}.`)
-    } 
-    
-    //console.log(`Matches ${good}`)
-    
-    if (good == 0) {
-      errors += 1    
-    }   
-  }
-  
-  //console.log(`Errors ${errors}`)
+  splitArr.forEach(el => {
+    el > 'm' ? errors += 1 : errors += 0
+  })
   
   let message = `${errors}/${total}`
+  
   return message
 }
